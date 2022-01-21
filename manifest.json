@@ -1,9 +1,14 @@
 {
     "name": "Glyph to Clipboard",
     "description": "Convert any selected text to a transparent image and copy it to your clipboard.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "manifest_version": 3,
     "permissions": ["contextMenus", "activeTab"],
+    "icons": {
+        "16": "resources/icon-16.png",
+        "48": "resources/icon-48.png",
+        "128": "resources/icon-128.png"
+    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],

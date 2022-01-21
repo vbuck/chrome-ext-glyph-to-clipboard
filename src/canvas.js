@@ -43,18 +43,18 @@ class AppCanvas {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 
-    render(glyph, size = '24px', color = '#000', font = 'sans-serif', trim = true) {
+    render(glyph, size = '24px', weight = 'normal', color = '#000', font = 'sans-serif', trim = true) {
         this.clear();
 
         let style = {
-            'font': size + ' ' + font,
-            'fillStyle': color,
-            'textBaseline': 'top',
-            'canvasWidth': this.canvas.width,
-            'canvasHeight': this.canvas.height,
-            'computedSize': parseInt(size, 10),
-            'offsetLeft': Math.floor((this.canvas.width / 2) - (parseInt(size, 10) / 2)),
-            'offsetTop': Math.floor((this.canvas.height / 2) - (parseInt(size, 10) / 2))
+            font: weight + ' ' + size + ' ' + font,
+            fillStyle: color,
+            textBaseline: 'top',
+            canvasWidth: this.canvas.width,
+            canvasHeight: this.canvas.height,
+            computedSize: parseInt(size, 10),
+            offsetLeft: Math.floor((this.canvas.width / 2) - (parseInt(size, 10) / 2)),
+            offsetTop: Math.floor((this.canvas.height / 2) - (parseInt(size, 10) / 2))
         };
 
         console.log('Performing render', glyph, style);

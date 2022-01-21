@@ -27,9 +27,13 @@ Once installed, follow these steps:
  1. Navigate to any URL
  2. Select a character or piece of text
  3. Right-click to open the context menu
- 4. Choose Glyph-to-Clipboard
+ 4. Choose Glyph-to-Clipboard > [Any Scaling Option]
  5. Your selected text is now copied as an image to your clipboard
  6. Paste the image into any application
+ 
+## Attribution
+
+ * Extension Icon / Logo: [Clone icons created by itim2101 - Flaticon](https://www.flaticon.com/free-icons/clone)
  
 ## License
 

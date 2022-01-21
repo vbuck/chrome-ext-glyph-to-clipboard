@@ -16,8 +16,9 @@ class AppCanvasAdapter {
     /**
      * @param {Selection} selection
      * @param {Boolean} trim
+     * @param {Number} scale
      */
-    copy(selection, trim = true) {
+    copy(selection, trim = true, scale = 1) {
         if (!(selection instanceof Selection) || !selection.rangeCount) {
             return console.error('Cannot render because the selected text range is invalid.');
         }
@@ -28,7 +29,8 @@ class AppCanvasAdapter {
         this.canvas.resize(context.offsetWidth, context.offsetHeight);
         this.canvas.render(
             selection.toString(),
-            style.getPropertyValue('font-size'),
+            (parseInt(style.getPropertyValue('font-size'), 10) * scale).toString() + 'px',
+            style.getPropertyValue('font-weight'),
             style.getPropertyValue('color'),
             style.getPropertyValue('font-family'),
             trim

@@ -4,6 +4,8 @@ Convert any selected text to a transparent image and copy it to your clipboard.
 
 This Chrome extension adds a context menu item using a content script.
 
+![Extension Demonstration](resources/preview.gif)
+
 ## Use Case
 
 * Easily convert icon fonts to images
